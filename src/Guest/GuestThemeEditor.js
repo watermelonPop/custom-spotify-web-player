@@ -211,7 +211,7 @@ function GuestThemeEditor({selectedEditTheme, themes, setThemes, currentTheme, s
 
                 setSelectedEditTheme(null);
                 }}>Save</button>
-                <button className='settingsBtns' onClick={() => {
+                <button className='settingsBtns themeCreatorBtn' onClick={() => {
                         handleDeleteTheme(selectedEditTheme); // handles fallback logic
                         setSelectedEditTheme(null); // close editor
                         }}>DELETE</button>

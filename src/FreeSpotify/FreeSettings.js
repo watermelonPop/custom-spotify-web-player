@@ -154,7 +154,6 @@ function FreeSettings({accessToken, themes, currentTheme, setTheme, setCurrentTh
         {creatorOpened === false  && selectedEditTheme === null ? (
             <div className='settingsContentOuter'>
                     <p className='contentTitle'>Settings</p>
-                    <button onClick={()=>localStorage.clear()}>reset</button>
                     <p className="artistTitle">Themes</p>
                     <div className='themesDiv'>
                     {themes.map(theme => (
@@ -211,7 +210,7 @@ function FreeSettings({accessToken, themes, currentTheme, setTheme, setCurrentTh
                         </div>
                     </div>
                 </div>
-                <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
+                <button onClick={()=>localStorage.clear()} className='settingsBtns themeCreatorBtn'>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <FreeThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>
