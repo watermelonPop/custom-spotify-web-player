@@ -154,7 +154,7 @@ function GuestThemeCreator({currentTheme, setCreatorOpened, setThemes, themes}) 
                         <button onClick={() => adjustFontWeight(+100)}>+</button>
                 </div>
                 </div>
-                <button className='settingsBtns' onClick={()=>{createTheme(buildTheme);handleSetBuildTheme(currentTheme);setCreatorOpened(false)}}>Create</button>
+                <button className='settingsBtns themeCreatorBtn' onClick={()=>{createTheme(buildTheme);handleSetBuildTheme(currentTheme);setCreatorOpened(false)}}>Create</button>
             </div>
         </>
     );
