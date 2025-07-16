@@ -1115,8 +1115,8 @@ margin: 0;
   width: 100%;
   justify-content: center;
   align-items: center;
-  padding-top: 10%;
-  padding-bottom: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
   /* optionally: position: relative; */
 }
 
@@ -1128,6 +1128,7 @@ margin: 0;
   overflow: hidden;
   display: flex;
   align-items: center;
+  background-color: aquamarine;
   /* Optional: add border-radius for a round swatch */
 }
 
@@ -1160,11 +1161,13 @@ margin: 0;
 
 
 .themeNameInputDiv{
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: antiquewhite;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: 1rem;
 }
 
@@ -1180,20 +1183,25 @@ margin: 0;
 }
 
 .themeSelectInputDiv{
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: antiquewhite;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
   font-size: 1rem;
 }
 
 .themePMInputDiv{
-  width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: antiquewhite;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  font-size: 1rem;
 }
 
 .themePMInputDiv button{
