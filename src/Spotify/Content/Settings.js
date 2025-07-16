@@ -155,7 +155,6 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
         {creatorOpened === false  && selectedEditTheme === null ? (
             <div className='settingsContentOuter'>
                     <p className='contentTitle'>Settings</p>
-                    <button onClick={()=>localStorage.clear()}>reset</button>
                     <p className="artistTitle">Themes</p>
                     <div className='themesDiv'>
                     {themes.map(theme => (
@@ -212,6 +211,7 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                         </div>
                     </div>
                 </div>
+                <button onClick={()=>localStorage.clear()}>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <ThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>
