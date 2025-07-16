@@ -139,6 +139,7 @@ function GuestPlayer() {
               useEffect(() => {
                 axios.get("https://custom-spotify-web-player.vercel.app/guest-token")
                   .then(res => {
+                        console.log("AXXEAS TOKEN: ", res.data.accessToken);
                     setAccessToken(res.data.accessToken);
                     spotifyApi.setAccessToken(res.data.accessToken);
                   })
