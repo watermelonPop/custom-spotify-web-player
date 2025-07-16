@@ -145,7 +145,6 @@ function GuestSettings({themes, currentTheme, setTheme, setCurrentTheme, setThem
         {creatorOpened === false  && selectedEditTheme === null ? (
             <div className='settingsContentOuter'>
                     <p className='contentTitle'>Settings</p>
-                    <button onClick={()=>localStorage.clear()}>reset</button>
                     <p className="artistTitle">Themes</p>
                     <div className='themesDiv'>
                     {themes.map(theme => (
@@ -175,7 +174,7 @@ function GuestSettings({themes, currentTheme, setTheme, setCurrentTheme, setThem
                                 <div className="themeColorDiv" style={{ backgroundColor: theme.accentTxtColor }}></div>
                         </div>
                 ))}
-                <button onClick={()=>setCreatorOpened(true)}>+add</button>
+                <button onClick={()=>setCreatorOpened(true)} className='settingsBtns'>+add</button>
                 </div>
                 <p className="artistTitle">Effects</p>
                 <div className='vantaEffectOptions'>
@@ -201,6 +200,7 @@ function GuestSettings({themes, currentTheme, setTheme, setCurrentTheme, setThem
                             Trunk
                         </div>
                     </div>
+                    <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
                 </div>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (

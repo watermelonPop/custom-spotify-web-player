@@ -184,7 +184,7 @@ function FreeSettings({accessToken, themes, currentTheme, setTheme, setCurrentTh
                                 <div className="themeColorDiv" style={{ backgroundColor: theme.accentTxtColor }}></div>
                         </div>
                 ))}
-                <button onClick={()=>setCreatorOpened(true)}>+add</button>
+                <button onClick={()=>setCreatorOpened(true)} className='settingsBtns'>+add</button>
                 </div>
                 <p className="artistTitle">Effects</p>
                 <div className='vantaEffectOptions'>
@@ -210,6 +210,7 @@ function FreeSettings({accessToken, themes, currentTheme, setTheme, setCurrentTh
                             Trunk
                         </div>
                     </div>
+                    <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
                 </div>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (

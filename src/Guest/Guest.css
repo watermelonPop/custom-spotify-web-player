@@ -63,7 +63,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: aliceblue;
         /* No text-overflow here, keep it on the p */
       }
       .guestArtistFollowers{
@@ -73,7 +72,6 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: aliceblue;
       }
 
       .guestArtistInfo p, .guestArtistFollowers p {
