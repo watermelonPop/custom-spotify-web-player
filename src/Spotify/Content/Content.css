@@ -144,6 +144,7 @@ button{
         row-gap: 5%;
         position: relative !important;
         z-index: 1 !important;
+        margin-bottom: 5%;
 }
 
 .profileContentOuter{
@@ -1137,4 +1138,5 @@ margin: 0;
   cursor: pointer;
   background-color: var(--accentColor);
   color: var(--accentTxtColor);
+  border: none;
 }
