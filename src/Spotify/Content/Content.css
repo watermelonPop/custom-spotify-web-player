@@ -1109,35 +1109,55 @@ margin: 0;
   height: 100%;
 }
 
-.themeColorInputDiv{
-  width: 60%;
+.themeColorInputDiv {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   background-color: antiquewhite;
-  font-size: 1rem;
+  width: 30%;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+  /* optionally: position: relative; */
 }
 
-.themeColorInputDiv input{
+/* The special wrapper for the color input */
+.colorInputWrapper {
+  /* This will control the visual size (height = parent height) */
+  height: 100%;
+  aspect-ratio: 1 / 1;    /* Ensures the square shape */
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  /* Optional: add border-radius for a round swatch */
+}
+
+/* The color input itself -- make it much bigger than needed and center it */
+.colorInputWrapper input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: auto;
-  aspect-ratio: 1 / 1;
-  height: 100%;
-  background-color: transparent;
+  width: 200%;
+  height: 200%;
+  margin: -50%;
   border: none;
+  background: transparent;
   cursor: pointer;
+  padding: 0;
 }
 
-.themeColorInputDiv input::-webkit-color-swatch {
-  border-radius: 15px;
-  border: none;
+/* Remove default color swatch borders for a cleaner look (optional) */
+.colorInputWrapper input[type="color"]::-webkit-color-swatch-wrapper {
+  padding: 0;
 }
-.themeColorInputDiv input::-moz-color-swatch {
-  border-radius: 15px;
+.colorInputWrapper input[type="color"]::-webkit-color-swatch {
   border: none;
+  border-radius: 0;
 }
+.colorInputWrapper input[type="color"]::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
 
 .themeNameInputDiv{
   width: 60%;
