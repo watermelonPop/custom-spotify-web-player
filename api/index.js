@@ -6,7 +6,7 @@ module.exports = async (req, res) => {
   const spotifyApi = new SpotifWebAPI({
     clientId: process.env.SPOTIFY_CLIENT_ID,
     clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
-    redirectUri: 'custom-spotify-web-player.vercel.app',
+    redirectUri: 'https://custom-spotify-web-player.vercel.app',
   });
 
   if (url === '/api/login' && method === 'POST') {
