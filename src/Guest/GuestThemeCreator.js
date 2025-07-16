@@ -86,6 +86,7 @@ function GuestThemeCreator({currentTheme, setCreatorOpened, setThemes, themes}) 
                         <button onClick={()=>{handleSetBuildTheme(currentTheme);setCreatorOpened(false)}}><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon></button>
                         <p className="title">Create Theme</p>
                 </div>
+                <div className='themeCreatorForm'>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="name">Name: </label>
                         <input id="name" type="text" value={buildTheme.name} onChange={(e) => handleThemeChange("name", e.target.value)}></input>
@@ -135,6 +136,7 @@ function GuestThemeCreator({currentTheme, setCreatorOpened, setThemes, themes}) 
                         <button onClick={() => adjustFontWeight(-100)}>-</button>
                         <p id="fontWeight">{buildTheme.fontWeight}</p>
                         <button onClick={() => adjustFontWeight(+100)}>+</button>
+                </div>
                 </div>
                 <button className='createThemeBtn' onClick={()=>{createTheme(buildTheme);handleSetBuildTheme(currentTheme);setCreatorOpened(false)}}>Create</button>
             </div>
