@@ -1004,6 +1004,13 @@ margin: 0;
   align-items: center;
   padding-top: 10%;
   padding-bottom: 10%;
+  border-radius: 15px;
+  color: var(--txtColor2);
+  text-shadow: 0 0 4px black, 0 0 10px black;
+}
+
+.selectedEffectDiv{
+  border: 2px solid var(--accentColor) !important;
 }
 
 .themesDiv {
@@ -1035,6 +1042,10 @@ margin: 0;
   position: relative; /* enable absolute positioning inside */
   overflow: hidden;
   background-color: white;
+}
+
+.selectedThemeDiv{
+  background-color: var(--accentColor);
 }
 
 .themeNameOverlay {
@@ -1090,7 +1101,6 @@ margin: 0;
   }
 
   .themeCreatorHeader {
-    background-color: antiquewhite;
     width: 100%;
     min-height: 60px;           /* Ensures header is tall enough */
     display: flex;
@@ -1106,20 +1116,19 @@ margin: 0;
   
 
 .themeCreatorHeader p{
-  background-color: lightblue;
   width:fit-content;
   height: 100%;
 }
 
 .themeColorInputDiv {
   display: flex;
-  background-color: antiquewhite;
   width: 90%;
   height: 2.5rem;
   justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
+  color: var(--txtColor1);
   /* optionally: position: relative; */
 }
 
@@ -1165,13 +1174,13 @@ margin: 0;
 
 .themeNameInputDiv{
   display: flex;
-  background-color: antiquewhite;
   width: 90%;
   justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 1rem;
+  color: var(--txtColor1);
 }
 
 .themeNameInputDiv input, .themeSelectInputDiv select{
@@ -1184,28 +1193,29 @@ margin: 0;
         padding: 2%;
   font-weight: var(--fontWeight);
   font-family: var(--fontFamily);
+  color: var(--txtColor3);
 }
 
 .themeSelectInputDiv{
   display: flex;
-  background-color: antiquewhite;
   width: 90%;
   justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 1rem;
+  color: var(--txtColor1);
 }
 
 .themePMInputDiv{
   display: flex;
-  background-color: antiquewhite;
   width: 90%;
   justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
   font-size: 1rem;
+  color: var(--txtColor1);
 }
 
 .themePMInputDiv button{

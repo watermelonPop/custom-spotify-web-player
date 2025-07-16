@@ -158,10 +158,10 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                     <p className="artistTitle">Themes</p>
                     <div className='themesDiv'>
                     {themes.map(theme => (
-                        <div key={theme.name} className="themeDiv" onClick={() => {
+                        <div key={theme.name} onClick={() => {
                             setCurrentTheme(theme);
                             setTheme(theme); // 💥 Immediately apply and persist the theme
-                        }}>
+                        }} className={theme.name === currentTheme.name ? "themeDiv selectedThemeDiv" : "themeDiv"}>
                             <div className="themeNameOverlay" style={{ fontFamily: theme.font, fontWeight: theme.fontWeight }}>
                                 {theme.name}
                             </div>
@@ -189,24 +189,24 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                 <p className="artistTitle">Effects</p>
                 <div className='vantaEffectOptions'>
                     <div className='effectRow'>
-                        <div className='effectDiv' onClick={() =>setEffect("Off")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} onClick={() =>setEffect("Off")} >
                             Off
                         </div>
-                        <div className='effectDiv' ref={myBirdsRef} onClick={() =>setEffect("Birds")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myBirdsRef} onClick={() =>setEffect("Birds")}>
                             Birds
                         </div>
-                        <div className='effectDiv' ref={myNetRef} onClick={() =>setEffect("Net")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myNetRef} onClick={() =>setEffect("Net")}>
                             Net
                         </div>
                     </div>
                     <div className='effectRow'>
-                        <div className='effectDiv' ref={myFogRef} onClick={() =>setEffect("Fog")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myFogRef} onClick={() =>setEffect("Fog")}>
                             Fog
                         </div>
-                        <div className='effectDiv' ref={myTopologyRef} onClick={() =>setEffect("Topology")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTopologyRef} onClick={() =>setEffect("Topology")}>
                             Topology
                         </div>
-                        <div className='effectDiv' ref={myTrunkRef} onClick={() =>setEffect("Trunk")}>
+                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTrunkRef} onClick={() =>setEffect("Trunk")}>
                             Trunk
                         </div>
                     </div>
