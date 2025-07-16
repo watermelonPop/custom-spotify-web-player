@@ -184,7 +184,7 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                                 <div className="themeColorDiv" style={{ backgroundColor: theme.accentTxtColor }}></div>
                         </div>
                 ))}
-                <button onClick={()=>setCreatorOpened(true)}>+add</button>
+                <button onClick={()=>setCreatorOpened(true)} className='settingsBtns'>+add</button>
                 </div>
                 <p className="artistTitle">Effects</p>
                 <div className='vantaEffectOptions'>
@@ -211,7 +211,7 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                         </div>
                     </div>
                 </div>
-                <button onClick={()=>localStorage.clear()}>reset themes & effects</button>
+                <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <ThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>
