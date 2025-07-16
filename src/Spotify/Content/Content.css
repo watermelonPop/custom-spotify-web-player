@@ -1112,7 +1112,7 @@ margin: 0;
 .themeColorInputDiv {
   display: flex;
   background-color: antiquewhite;
-  width: 30%;
+  width: 100%;
   justify-content: center;
   align-items: center;
   padding-top: 10%;
@@ -1160,7 +1160,7 @@ margin: 0;
 
 
 .themeNameInputDiv{
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1180,7 +1180,7 @@ margin: 0;
 }
 
 .themeSelectInputDiv{
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -1189,7 +1189,7 @@ margin: 0;
 }
 
 .themePMInputDiv{
-  width: 60%;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
