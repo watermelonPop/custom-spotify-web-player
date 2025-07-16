@@ -192,21 +192,21 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                         <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} onClick={() =>setEffect("Off")} >
                             Off
                         </div>
-                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myBirdsRef} onClick={() =>setEffect("Birds")}>
+                        <div className={vantaChoice === "Birds" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myBirdsRef} onClick={() =>setEffect("Birds")}>
                             Birds
                         </div>
-                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myNetRef} onClick={() =>setEffect("Net")}>
+                        <div className={vantaChoice === "Net" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myNetRef} onClick={() =>setEffect("Net")}>
                             Net
                         </div>
                     </div>
                     <div className='effectRow'>
-                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myFogRef} onClick={() =>setEffect("Fog")}>
+                        <div className={vantaChoice === "Fog" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myFogRef} onClick={() =>setEffect("Fog")}>
                             Fog
                         </div>
-                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTopologyRef} onClick={() =>setEffect("Topology")}>
+                        <div className={vantaChoice === "Topology" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTopologyRef} onClick={() =>setEffect("Topology")}>
                             Topology
                         </div>
-                        <div className={vantaChoice === "Off" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTrunkRef} onClick={() =>setEffect("Trunk")}>
+                        <div className={vantaChoice === "Trunk" ? "effectDiv selectedEffectDiv" : "effectDiv"} ref={myTrunkRef} onClick={() =>setEffect("Trunk")}>
                             Trunk
                         </div>
                     </div>
