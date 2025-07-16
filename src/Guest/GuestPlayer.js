@@ -137,7 +137,7 @@ function GuestPlayer() {
               }, []);
             
               useEffect(() => {
-                axios.get("http://127.0.0.1:4000/guest-token")
+                axios.get("https://custom-spotify-web-player.vercel.app/guest-token")
                   .then(res => {
                     setAccessToken(res.data.accessToken);
                     spotifyApi.setAccessToken(res.data.accessToken);
