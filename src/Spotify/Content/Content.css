@@ -121,28 +121,31 @@ button{
 
 .themeCreatorContentOuter{
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  overflow-y: scroll;
-  row-gap: 5%;
-  position: relative;
-  z-index: 1;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative !important;
+        z-index: 1 !important;
+        margin-bottom: 5%;
 }
 
 .themeCreatorForm{
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  row-gap: 5%;
   background-color: var(--backgroundColor1);
-  border-radius: 15px;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
   padding-top: 5%;
   padding-bottom: 5%;
+  border-radius: 15px;
 }
 
 
@@ -1119,8 +1122,9 @@ margin: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 100px;
-  height: 100px;
+  width: auto;
+  aspect-ratio: 1 / 1;
+  height: 100%;
   background-color: transparent;
   border: none;
   cursor: pointer;
