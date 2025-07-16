@@ -211,7 +211,7 @@ function Settings({accessToken, themes, currentTheme, setTheme, setCurrentTheme,
                         </div>
                     </div>
                 </div>
-                <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
+                <button onClick={()=>localStorage.clear()} className='settingsBtns themeCreatorBtn'>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <ThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>
