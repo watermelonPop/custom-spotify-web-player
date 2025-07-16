@@ -128,6 +128,7 @@ function GuestThemeEditor({selectedEditTheme, themes, setThemes, currentTheme, s
                         }}><FontAwesomeIcon icon={faArrowLeft}></FontAwesomeIcon></button>
                         <p className="title">Edit Theme</p>
                 </div>
+                <div className='themeCreatorForm'>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="name">Name: </label>
                         <input id="name" type="text" value={buildTheme.name} onChange={(e) => handleThemeChange("name", e.target.value)}></input>
@@ -178,6 +179,7 @@ function GuestThemeEditor({selectedEditTheme, themes, setThemes, currentTheme, s
                         <p id="fontWeight">{buildTheme.fontWeight}</p>
                         <button onClick={() => adjustFontWeight(+100)}>+</button>
                 </div>
+                </div>
                 <button className='createThemeBtn' onClick={() => {
                 handleEditTheme(buildTheme);
 
@@ -197,7 +199,7 @@ function GuestThemeEditor({selectedEditTheme, themes, setThemes, currentTheme, s
                         handleDeleteTheme(selectedEditTheme); // handles fallback logic
                         setSelectedEditTheme(null); // close editor
                         }}>DELETE</button>
-            </div>
+        </div>
         </>
     );
 }

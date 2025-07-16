@@ -200,8 +200,8 @@ function GuestSettings({themes, currentTheme, setTheme, setCurrentTheme, setThem
                             Trunk
                         </div>
                     </div>
-                    <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
                 </div>
+                <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <GuestThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>

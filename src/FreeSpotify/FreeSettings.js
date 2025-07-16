@@ -210,8 +210,8 @@ function FreeSettings({accessToken, themes, currentTheme, setTheme, setCurrentTh
                             Trunk
                         </div>
                     </div>
-                    <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
                 </div>
+                <button onClick={()=>localStorage.clear()} className='settingsBtns'>reset themes & effects</button>
             </div>
         ) : creatorOpened === true && selectedEditTheme === null ? (
             <FreeThemeCreator setCreatorOpened={setCreatorOpened} currentTheme={currentTheme} setThemes={setThemes} themes={themes}/>
