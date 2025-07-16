@@ -9,11 +9,11 @@ const spotify_client_id = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
         });
         const BASE_URL = process.env.NODE_ENV === 'development'
   ? "http://127.0.0.1:4000"
-  : "https://your-vercel-deployment.vercel.app";
+  : "https://custom-spotify-web-player.vercel.app";
 
         var spotify_redirect_uri = "http://127.0.0.1:3000";
 function Login({setGuestPlayerOpen}) {
-        const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${spotify_client_id}&response_type=code&redirect_uri=${baseURL}&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state%20user-read-recently-played%20user-follow-read%20playlist-read-private%20playlist-modify-public%20playlist-modify-private%20user-follow-modify`;
+        const AUTH_URL = `https://accounts.spotify.com/authorize?client_id=${spotify_client_id}&response_type=code&redirect_uri=${BASE_URL}&scope=streaming%20user-read-email%20user-read-private%20user-library-read%20user-library-modify%20user-read-playback-state%20user-modify-playback-state%20user-read-recently-played%20user-follow-read%20playlist-read-private%20playlist-modify-public%20playlist-modify-private%20user-follow-modify`;
     return (
         <>
         <div className="loginOuter">

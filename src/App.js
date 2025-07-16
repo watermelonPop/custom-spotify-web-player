@@ -22,7 +22,7 @@ function App() {
   
     if (code && !hasExchangedCodeRef.current) {
       hasExchangedCodeRef.current = true; // set to true immediately
-      axios.post("https://your-vercel-deployment.vercel.app/api/login", { code })
+      axios.post("https://custom-spotify-web-player.vercel.app/api/login", { code })
         .then((res) => {
           console.log("SUCCESS");
           setAccessToken(res.data.accessToken);
@@ -53,7 +53,7 @@ function App() {
     if (!refreshToken || !expiresIn) return;
     const interval = setInterval(() => {
       axios
-        .post("https://your-vercel-deployment.vercel.app/api/refresh", {
+        .post("https://custom-spotify-web-player.vercel.app/api/refresh", {
           refreshToken,
         })
         .then((res) => {
