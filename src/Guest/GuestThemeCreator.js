@@ -93,49 +93,49 @@ function GuestThemeCreator({currentTheme, setCreatorOpened, setThemes, themes}) 
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="backgroundColor1">Background Color 1: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="backgroundColor1" type="color" value={buildTheme.backgroundColor1} onChange={(e) => handleThemeChange("backgroundColor1", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="txtColor1">Text Color 1: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="txtColor1" type="color" value={buildTheme.txtColor1} onChange={(e) => handleThemeChange("txtColor1", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="backgroundColor2">Background Color 2: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="backgroundColor2" type="color" value={buildTheme.backgroundColor2} onChange={(e) => handleThemeChange("backgroundColor2", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="txtColor2">Text Color 2: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="txtColor2" type="color" value={buildTheme.txtColor2} onChange={(e) => handleThemeChange("txtColor2", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="backgroundColor3">Background Color 3: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="backgroundColor3" type="color" value={buildTheme.backgroundColor3} onChange={(e) => handleThemeChange("backgroundColor3", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="txtColor3">Text Color 3: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="txtColor3" type="color" value={buildTheme.txtColor3} onChange={(e) => handleThemeChange("txtColor3", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="accentColor">Accent Color: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="accentColor" type="color" value={buildTheme.accentColor} onChange={(e) => handleThemeChange("accentColor", e.target.value)}></input>
                         </div>
                 </div>
                 <div className='themeColorInputDiv'>
                         <label htmlFor="accentTxtColor">Accent Text Color: </label>
-                        <div class="colorInputWrapper">
+                        <div className="colorInputWrapper">
                                 <input id="accentTxtColor" type="color" value={buildTheme.accentTxtColor} onChange={(e) => handleThemeChange("accentTxtColor", e.target.value)}></input>
                         </div>
                 </div>

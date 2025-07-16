@@ -1113,7 +1113,8 @@ margin: 0;
   display: flex;
   background-color: antiquewhite;
   width: 100%;
-  justify-content: center;
+  height: 3rem;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -1122,17 +1123,15 @@ margin: 0;
 
 /* The special wrapper for the color input */
 .colorInputWrapper {
-  /* This will control the visual size (height = parent height) */
-  height: 100%;
-  aspect-ratio: 1 / 1;    /* Ensures the square shape */
+  height: 100%;       /* fill parent's height */
+  aspect-ratio: 1 / 1;
   overflow: hidden;
   display: flex;
   align-items: center;
+  justify-content: center;
   background-color: aquamarine;
-  /* Optional: add border-radius for a round swatch */
 }
 
-/* The color input itself -- make it much bigger than needed and center it */
 .colorInputWrapper input[type="color"] {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1145,6 +1144,7 @@ margin: 0;
   cursor: pointer;
   padding: 0;
 }
+
 
 /* Remove default color swatch borders for a cleaner look (optional) */
 .colorInputWrapper input[type="color"]::-webkit-color-swatch-wrapper {
@@ -1164,7 +1164,7 @@ margin: 0;
   display: flex;
   background-color: antiquewhite;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -1178,15 +1178,15 @@ margin: 0;
         padding: 0;
         font-size: 1rem;
         color: var(--txtColor3);
-        padding-left: 2%;
-        padding-right: 2%;
+        padding: 2%;
+
 }
 
 .themeSelectInputDiv{
   display: flex;
   background-color: antiquewhite;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
@@ -1197,7 +1197,7 @@ margin: 0;
   display: flex;
   background-color: antiquewhite;
   width: 100%;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding-top: 5%;
   padding-bottom: 5%;
