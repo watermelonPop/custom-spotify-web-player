@@ -87,7 +87,7 @@ function GuestThemeCreator({currentTheme, setCreatorOpened, setThemes, themes}) 
                         <p className="title">Create Theme</p>
                 </div>
                 <div className='themeCreatorForm'>
-                <div className='themeColorInputDiv'>
+                <div className='themeNameInputDiv'>
                         <label htmlFor="name">Name: </label>
                         <input id="name" type="text" value={buildTheme.name} onChange={(e) => handleThemeChange("name", e.target.value)}></input>
                 </div>
