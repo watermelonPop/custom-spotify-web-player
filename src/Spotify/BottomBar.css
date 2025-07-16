@@ -1,0 +1,188 @@
+/*:root {
+  --backgroundColor1: #121212;
+  --backgroundColor2: #212121;
+  --backgroundColor3: #535353;
+  --accentColor: #4B825E;
+  --txtColor1: #FFFFFF;
+  --txtColor2: #FFFFFF;
+  --txtColor3: #FFFFFF;
+  --accentTxtColor: #000000;
+}*/
+
+.bottomBarOuter{
+        background-color: var(--backgroundColor1);
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        color: var(--txtColor1);
+}
+
+.songInfoControls{
+        width: 30%;
+        height: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+}
+
+.middleControls{
+        width: 50%;
+        height: 90%;
+}
+
+.middleControlsTop{
+        width: 100%;
+        height: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+}
+
+.middleControlsBott{
+        width: 100%;
+        height: 60%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+}
+
+.middleControlsBott button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.5rem;
+        color: var(--txtColor1);
+        text-shadow: 0 0 3px black, 0 0 5px white;
+}
+
+.middleControlsTop input{
+        width: 80%;
+}
+
+.rightControls{
+        width: 20%;
+        height: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+}
+
+.shuffle-true{
+        color:var(--accentColor) !important;
+}
+
+.shuffle-false{
+        color: var(--txtColor1) !important;
+}
+
+.currentSongImg{
+        height: 80%;
+        width: auto;
+        border-radius: 15px;
+        margin-left: 5%;
+}
+
+.currentSongTxt{
+        height: 100%;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 10%;
+}
+
+.currentSongTxt p{
+        padding: 0;
+        margin: 0;
+}
+
+.currentSongTitle{
+        font-size: 1.2rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+.currentSongArtist{
+        font-size: 1rem;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+
+/* Shared styles for all range inputs */
+input[type="range"] {
+        -webkit-appearance: none; /* Remove default styling */
+        height: 6px;
+        background: transparent;
+        cursor: pointer;
+        margin: 0 8px;
+      }
+      
+      /* Track (the full bar) */
+      input[type="range"]::-webkit-slider-runnable-track {
+        height: 6px;
+        background: var(--backgroundColor3);
+        border-radius: 3px;
+      }
+      
+      input[type="range"]::-moz-range-track {
+        height: 6px;
+        background: var(--backgroundColor3);
+        border-radius: 3px;
+      }
+      
+      /* Filled portion (progress) - only works with background trick or JS for full control */
+      
+      /* Thumb (the draggable knob) */
+      input[type="range"]::-webkit-slider-thumb {
+        -webkit-appearance: none;
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: var(--accentColor); /* Spotify green */
+        border: none;
+        margin-top: -4px; /* Align thumb vertically */
+        transition: background 0.2s;
+      }
+      
+      input[type="range"]::-moz-range-thumb {
+        height: 14px;
+        width: 14px;
+        border-radius: 50%;
+        background: var(--accentColor);
+        border: none;
+        transition: background 0.2s;
+      }
+      
+      input[type="range"]:hover::-webkit-slider-thumb {
+        background: var(--accentColor); /* Lighter green on hover */
+      }
+      
+      input[type="range"]:hover::-moz-range-thumb {
+        background: var(--accentColor);
+      }
+
+
+      .repeat-off{
+        color: var(--txtColor1);
+      }
+
+      .repeat-context, .repeat-track{
+        color:var(--accentColor) !important;
+      }
+
+      .repeat-track{
+        border: var(--accentColor) 2px solid !important;
+        border-radius: 50%;
+        font-size: 1rem !important;
+      }
+      

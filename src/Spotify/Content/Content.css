@@ -1,0 +1,1125 @@
+/*:root {
+  --backgroundColor1: #121212;
+  --backgroundColor2: #212121;
+  --backgroundColor3: #535353;
+  --accentColor: #4B825E;
+  --txtColor1: #FFFFFF;
+  --txtColor2: #FFFFFF;
+  --txtColor3: #FFFFFF;
+  --accentTxtColor: #000000;
+}*/
+
+button{
+  cursor: pointer;
+}
+.homeContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        z-index: 10000 !important;
+}
+
+.searchContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative;
+        z-index: 1;
+}
+
+.searchResultsDiv{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+}
+
+.playlistsContentOuter{
+      position: relative;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        z-index: 1;
+}
+
+.likedContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative;
+        z-index: 1;
+}
+
+.selectedPlaylistContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: scroll;
+}
+
+.artistsContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative;
+        z-index: 1;
+}
+
+.albumsContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative;
+        z-index: 1;
+}
+
+.selectedArtistContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+}
+
+.themeCreatorContentOuter{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  overflow-y: scroll;
+  row-gap: 5%;
+  position: relative;
+  z-index: 1;
+}
+
+
+.settingsContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative !important;
+        z-index: 1 !important;
+}
+
+.profileContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+        position: relative;
+        z-index: 1;
+}
+
+
+.profileContentOuter img{
+        height: 100%;
+        width: auto;
+}    
+
+.profileHeader{
+        width: 80%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        background-color: var(--backgroundColor1);
+        border-radius: 15px;
+}
+
+.profileInfo{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: var(--txtColor1);
+        row-gap: 10%;
+}
+
+.profileInfo p{
+  margin: 0;
+  padding: 0;
+}
+
+
+
+.selectedAlbumContentOuter{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        overflow-y: scroll;
+        row-gap: 5%;
+}
+
+.selectedAlbumHeader{
+        width: 100%;
+        height: 30%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        column-gap: 5%;
+        margin-top: 5%;
+}
+
+.selectedAlbumHeader button{
+  font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        color: var(--txtColor2);
+}
+
+
+.selectedAlbumHeader img{
+        height: 80%;
+        width: auto;
+        border-radius: 15px;
+}      
+
+.selectedAlbumInfo{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        row-gap: 2.5%;
+        color: var(--txtColor2);
+}
+
+.selectedAlbumInfo p{
+  padding: 0;
+  margin: 0;
+}
+
+.followAlbumBtn{
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  padding-top: 2.5% !important;
+  padding-bottom: 2.5% !important;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
+  cursor: pointer;
+}
+
+.likedAlbum{
+  background-color: var(--accentColor);
+  color: var(--accentTxtColor)
+}
+
+.unlikedAlbum{
+  background-color: var(--backgroundColor3);
+  color: var(--txtColor3);
+}
+
+
+
+
+.followArtistBtn{
+  padding-left: 5% !important;
+  padding-right: 5% !important;
+  padding-top: 2.5% !important;
+  padding-bottom: 2.5% !important;
+  border-radius: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 10%;
+  cursor: pointer;
+}
+
+
+.selectedArtistHeader button{
+  font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--txtColor2);
+  }
+
+.selectedArtistHeader{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 5%;
+  margin-top: 5%;
+}
+
+
+.selectedArtistHeader img{
+  height: 80%;
+  width: auto;
+  border-radius: 15px;
+}      
+
+.selectedArtistInfo{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    row-gap: 2.5%;
+    color: var(--txtColor2);
+}
+
+.selectedArtistInfo p{
+  padding: 0;
+margin: 0;
+}
+.onTopHomeDiv{
+        width: 85%;
+        border-radius: 8px;
+        height: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      
+      
+      .innerHomeDiv{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+      }
+      
+      .flip-card-front p{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 3rem;
+      }
+      
+      .flip-card-back p{
+        width: 80%;
+        height: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 700;
+        font-style: normal;
+        font-size: 1.5rem;
+      }
+      
+      .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+      }
+      
+      /* Do an horizontal flip when you move the mouse over the flip box container */
+      .innerHomeDiv:hover .flip-card-inner {
+        transform: rotateY(180deg);
+      }
+      
+      /* Position the front and back side */
+      .flip-card-front, .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden; /* Safari */
+        backface-visibility: hidden;
+        border-radius: 8px;
+      }
+      
+      /* Style the front side (fallback if image is missing) */
+      .flip-card-front {
+        background-color: var(--backgroundColor1);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 8px;
+        perspective: 1000px;
+        color: var(--txtColor1);
+      }
+      
+      /* Style the back side */
+      .flip-card-back {
+        background-color: var(--accentColor);
+        color: var(--accentTxtColor);
+        transform: rotateY(180deg);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+      .songDiv{
+        width: 70%;
+        height: 15%;
+        background-color: var(--backgroundColor1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 2.5%;
+        font-size: 1rem;
+        color: var(--txtColor1);
+      }
+
+      .songDiv img{
+        width: auto;
+        height: 100%;
+        border-radius: 15px;
+      }
+
+      .trackMainInfo {
+        width: 30%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        /* No text-overflow here, keep it on the p */
+      }
+      
+      .trackMainInfo p {
+        width: 90%;
+        margin: 0; /* Optional: Remove default p margin */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Remove display: flex and flex-direction */
+      }
+
+      .trackLikeBtn{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .trackLikeBtn button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+      }
+
+      
+
+      .trackMoreBtn{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .trackMoreBtn button{
+        background-color: transparent;
+        font-size: 1.2rem;
+        border: none;
+        color: var(--txtColor1);
+      }
+
+      .trackAlbumName {
+        width: 20%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* No text-overflow here, keep it on the p */
+      }
+      
+      .trackAlbumName p {
+        width: 90%;
+        /* Remove background-color if you only want it on the parent */
+        margin: 0; /* Optional: Remove default p margin */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 2;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Remove display: flex and flex-direction */
+      }
+      
+      
+
+      .trackDuration{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      
+
+
+      .playlistSongDiv{
+        width: 70%;
+        height: 15%;
+        background-color: var(--backgroundColor1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        border-radius: 15px;
+        padding: 2.5%;
+        color: var(--txtColor1);
+        cursor: pointer;
+      }
+
+      .playlistImgDiv{
+        height: 100%;
+        width: auto;       /* Set your desired square size */
+        aspect-ratio: 1 / 1; /* Ensures the container is square */
+        overflow: hidden;    /* Hide overflow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        border-radius: 15px;
+      }
+
+      .playlistImgDiv img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* Ensures the image covers the container */
+        object-position: center; /* Center the image */
+        display: block;
+      }
+
+      .playlistName{
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: left;
+      }
+
+      .playlistTracks{
+        width: 25%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .contentHeader{
+        width: 100%;
+        height: 20%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 5%;
+        font-size: 2rem;
+        color: var(--txtColor2);
+      }
+
+      .contentHeader button{
+        font-size: 1.5rem;
+        background-color: transparent;
+        border: none;
+        color: var(--txtColor2);
+      }
+
+      .contentInner{
+        width: 100%;
+        height: 80%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        row-gap: 5%;
+      }
+
+
+
+
+
+
+
+      .artistDiv{
+        width: 70%;
+        height: 15%;
+        background-color: var(--backgroundColor1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5%;
+        border-radius: 15px;
+        font-size: 1rem;
+        color: var(--txtColor1);
+        cursor: pointer;
+      }
+
+      .artistDiv img{
+        width: auto;
+        height: 100%;
+        border-radius: 15px;
+      }
+
+
+      .artistInfo {
+        width: 40%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+        /* No text-overflow here, keep it on the p */
+      }
+      .artistFollowers{
+        width: 20%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+      }
+      
+      .artistInfo p, .artistFollowers p {
+        width: 90%;
+        margin: 0; /* Optional: Remove default p margin */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Remove display: flex and flex-direction */
+      }
+
+      .artistLikeBtn{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: aliceblue;
+      }
+
+      .artistLikeBtn button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+      }
+
+      .artistMore{
+        width: 15%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+
+
+
+      .albumDiv{
+        width: 70%;
+        height: 15%;
+        background-color: var(--backgroundColor1);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 2.5%;
+        border-radius: 15px;
+        color: var(--txtColor1);
+        cursor: pointer;
+      }
+
+      .albumDiv img{
+        width: auto;
+        height: 100%;
+        border-radius: 15px;
+      }
+
+
+      .albumInfo {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1rem;
+        /* No text-overflow here, keep it on the p */
+      }
+      
+      .albumInfo p {
+        width: 90%;
+        margin: 0; /* Optional: Remove default p margin */
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+        /* Remove display: flex and flex-direction */
+      }
+
+      .albumLikeBtn{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .albumLikeBtn button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+      }
+
+      .albumMore{
+        width: 10%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .albumMore button{
+        background-color: transparent;
+        border: none;
+        font-size: 1.2rem;
+        color: var(--txtColor1);
+      }
+
+
+
+      .profileHeaderImgDiv{
+        height: 70%;
+        width: auto;       /* Set your desired square size */
+        aspect-ratio: 1 / 1; /* Ensures the container is square */
+        overflow: hidden;    /* Hide overflow */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+}
+
+.profileHeaderImgDiv img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;   /* Ensures the image covers the container */
+        object-position: center; /* Center the image */
+        display: block;
+        border-radius: 50%;
+}
+
+
+
+.dropdown {
+        position: relative;
+        display: inline-block;
+      }
+      
+      /* Dropdown Content (Hidden by Default) */
+      .dropdown-content {
+        display: none;
+        position: fixed;
+        background-color: var(--backgroundColor1);
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1000;
+        max-height: 50vh;
+        overflow-y: scroll;
+        text-align: center;
+      }
+      
+      /* Links inside the dropdown */
+      .dropdown-content a {
+        color: var(--txtColor1);
+        padding: 12px 16px;
+        text-decoration: none;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        column-gap: 5%;
+        cursor: pointer;
+      }
+      
+      /* Change color of dropdown links on hover */
+      .dropdown-content a:hover {background-color: var(--txtColor1); color: var(--backgroundColor1)}
+      
+      /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+      .show {
+        display:block;
+        }
+
+
+        .trackLiked{
+                color: var(--accentColor);
+        }
+
+        .trackUnliked{
+                color: var(--backgroundColor3);
+        }
+
+
+        .searchTypeSelect{
+                position: relative;
+                display: flex;
+                width: 80%;
+                height: 20%;
+                justify-content: space-evenly;
+                align-items: center;
+        }
+
+        .searchTypeSelect p{
+                background-color: var(--backgroundColor3);
+        width: 30%;
+        height: 60%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 15px;
+        cursor: pointer;
+        position: relative;
+        z-index: 2;
+        font-weight: 500;
+        transition: background 0.4s, color 1s;
+        color: var(--txtColor3);
+        }
+
+        .searchTypeSelect p.selected {
+                background-color: var(--accentColor);
+                color: var(--accentTxtColor);
+                font-weight: bold;
+        }
+
+        .timeframe-indicator {
+                position: absolute;
+                bottom: 10px;
+                height: 6px;
+                width: 30%;
+                border-radius: 3px;
+                background: var(--accentColor);
+                z-index: 1;
+                transition: left 0.4s cubic-bezier(.4,1.7,.7,1.01);
+                left: 0;
+              }
+
+              .timeframe-indicator[data-selected="tracks"] {
+                left: 2.5%;
+              }
+              .timeframe-indicator[data-selected="albums"] {
+                left: 35%;
+              }
+              .timeframe-indicator[data-selected="artists"] {
+                left: 67.5%;
+              }
+
+
+
+
+
+              .outerLoader {
+                position: fixed; /* overlay it on top of everything */
+                top: 0;
+                left: 0;
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: rgba(255, 255, 255, 0.6); /* optional: semi-transparent background */
+                z-index: 1000; /* high z-index to appear above other content */
+              }
+              
+
+.loader {
+  border: 16px solid var(--accentTxtColor); /* Light grey */
+  border-top: 16px solid var(--accentColor); /* Blue */
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.contentTitle{
+  width: 100%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txtColor2);
+}
+
+.title{
+  font-size: 1.5rem;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;   /* Limit to 2 lines */
+        overflow: hidden;
+        text-overflow: ellipsis;
+}
+
+.subtitle{
+  font-size: 1rem;
+  width: 100%;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;   /* Limit to 2 lines */
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.artistTitle{
+  width: 100%;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--txtColor2);
+}
+
+.trackClickable{
+  cursor: pointer;
+}
+
+.vantaEffectOptions{
+  background-color: blue;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.effectRow{
+  display: flex;
+  width: 100%;
+  background-color: lightblue;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.effectDiv{
+  display: flex;
+  background-color: antiquewhite;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+
+.themesDiv {
+  background-color: blue;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+.themeDiv {
+  width: 100%;
+  aspect-ratio: 8 / 1;
+  border: 4px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
+  gap: 4px;
+  padding: 4px;
+  box-sizing: border-box;
+  position: relative; /* enable absolute positioning inside */
+  overflow: hidden;
+  background-color: lightcoral;
+}
+
+.themeNameOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none; /* allows clicking through to the themeDiv if needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  color: white;
+  text-shadow: 0 0 4px black, 0 0 10px black;
+  font-weight: bold;
+}
+
+
+.themeColorDiv {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  border-radius: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid white;
+  overflow: hidden; /* 🔥 Prevents oversized content from affecting sizing */
+}
+
+
+.themeColorDiv p {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  font-size: 0.75rem; /* 🔧 Set a consistent font size */
+  text-align: center;
+  text-shadow: 0 0 3px black, 0 0 5px white;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.themeCreatorHeader button{
+  font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: var(--txtColor2);
+  }
+
+  .themeCreatorHeader {
+    background-color: antiquewhite;
+    width: 100%;
+    min-height: 60px;           /* Ensures header is tall enough */
+    display: flex;
+    flex-direction: row;        /* Explicitly set row direction */
+    justify-content: center;
+    align-items: center;
+    column-gap: 5%;
+    margin-top: 5%;
+    color: var(--txtColor2);
+    padding: 12px 0;            /* Adds vertical space */
+    box-sizing: border-box;
+  }
+  
+
+.themeCreatorHeader p{
+  background-color: lightblue;
+  width:fit-content;
+  height: 100%;
+}
+
+.themeColorInputDiv{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.themeSelectInputDiv{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.themePMInputDiv{
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
+.themePMInputDiv p{
+}
+
+.createThemeBtn{
+  margin-bottom: 5%;
+}
